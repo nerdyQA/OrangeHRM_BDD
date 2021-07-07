@@ -2,7 +2,7 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WrapsDriver;
+
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -24,7 +24,7 @@ public class AddUsers {
 	WebElement Usermngmntmenu;
 	
 	@CacheLookup
-	@FindBy(xpath="menu_admin_viewSystemUsers")
+	@FindBy(id="menu_admin_viewSystemUsers")
 	WebElement Userssubmenu;
 	
 	@CacheLookup
