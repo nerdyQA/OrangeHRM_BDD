@@ -19,7 +19,7 @@ public class Steps extends BaseClass {
 		
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//Drivers//chromedriver.exe/");
 		driver = new ChromeDriver();
-		lp = new LoginPage(driver);
+		
 
 	}
 
@@ -33,6 +33,7 @@ public class Steps extends BaseClass {
 
 	@When("user enters the {string} and {string}")
 	public void user_enters_the_and(String Emailid, String Pass) {
+		lp = new LoginPage(driver);
 		lp.setUsername(Emailid);
 		lp.setPassword(Pass);
 
