@@ -63,7 +63,7 @@ public class Steps extends BaseClass {
 	public void close_the_browser() {
 		driver.quit();
 	}
-	// Scripts for User Management feature
+	// Scripts for User Management feature//
 
 	
 	@And("clicks on Admin menu")
