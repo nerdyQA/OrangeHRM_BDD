@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+public class Steps {
+
 
 	
 
@@ -74,5 +76,8 @@ package stepDefinitions;
 		}
 
 	}
+
+
+=======
 
 
