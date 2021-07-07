@@ -20,7 +20,7 @@ package stepDefinitions;
 
 		@Given("user launches the Browser")
 		public void user_launches_the_browser() {
-			lp = new LoginPage(driver);
+			
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//Drivers//chromedriver.exe/");
 			driver = new ChromeDriver();
 
@@ -38,6 +38,7 @@ package stepDefinitions;
 
 			@When("user enters the {string} and {string}")
 			public void user_enters_the_and(String Emailid, String Pass) {
+				lp = new LoginPage(driver);
 				lp.setUsername(Emailid);
 				lp.setPassword(Pass);
 			   
@@ -55,6 +56,7 @@ package stepDefinitions;
 		@Then("page title should be {string}")
 		public void page_title_should_be(String title) {
 			if (driver.getPageSource().contains("Invalid credentials")) {
+				driver.close();
 				Assert.assertTrue(false);
 			} else {
 				Assert.assertEquals(title, driver.getTitle());
