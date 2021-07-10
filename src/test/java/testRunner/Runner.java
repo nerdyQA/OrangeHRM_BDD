@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 glue={"stepDefinitions"},
 dryRun=false,
 monochrome=true,
-plugin={"pretty","html:/target/HTML-Reports/test-output.html"})
+plugin={"pretty","html:./target/HTML-Reports/test-output.html"})
 public class Runner {
 
 }

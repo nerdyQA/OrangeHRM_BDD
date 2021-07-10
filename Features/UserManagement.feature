@@ -19,16 +19,6 @@ Feature: Users management Feature
     Examples: 
       | Emp Name| Username | Password | ConfirmPass |
       | Garry White| garryy| garry@white123| garry@white123|
-      | Alice Duval| aaliiccyy| alice@duval123| alice@duval123|
+      | Alice Duval| aliciia| alice@duval123| alice@duval123|
 
-  #@tag2
-  #Scenario: Edit a user
-    #Given User is on the System User Screen
-    #When User enters the username to search
-    #And Click on Search button
-    #Then verify if the username is "alicee"
-    #And click on the username
-    #Then click on the edit button
-    #And Change the user role to "Admin"
-    #And Click on Save button
-    #Then verify that the message "Successfully Updated"
+  
